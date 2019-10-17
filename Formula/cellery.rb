@@ -14,7 +14,7 @@ class Cellery < Formula
   def install
 # bin.install "Library/Cellery/cellery"
     bin.install "cellery"
-    resources.install Dir["*"]
+#    resources.install Dir["*"]
 #    (/Users/hasinthaindrajee/work/cellery/"brew").install "cellery"
   end
 

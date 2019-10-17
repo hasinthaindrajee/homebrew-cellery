@@ -5,7 +5,7 @@ class Cellery < Formula
   desc ""
   homepage ""
   url "https://cellery-installer-resources.s3.amazonaws.com/cellery-0.5.0-SNAPSHOT.zip"
-  sha256 "bc4955c1e2822453a41bf1093bd3a45e33502135d53eb38d3d77e6a8437217d2"
+  sha256 "99dce22672ee7b175c89c0ec800f5722ab5eb1887d9b1f1fb3c1ff5bf877376d"
 
  depends_on "hasinthaindrajee/cellery/ballerina"
  depends_on "python"

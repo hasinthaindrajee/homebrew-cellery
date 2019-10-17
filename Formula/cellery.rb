@@ -12,8 +12,8 @@ class Cellery < Formula
  depends_on "torsocks"
 
   def install
-    bin.install "Library/Cellery"
-    bin.install "Library/Cellery/cellery"
+    bin.install "Library/Cellery/"
+    #bin.install "Library/Cellery/cellery"
     libexec.install Dir["*"]
   end
 

@@ -13,8 +13,8 @@ class Cellery < Formula
 
   def install
 # bin.install "Library/Cellery/cellery"
-    bin.install "cellery"
-    libexec.install Dir["*"]
+    #bin.install "cellery"
+   # libexec.install Dir["*"]
    # (/usr/local/Cellar/"test").install "cellery"
    FileUtils.cp("cellery", "/usr/local/Cellar/test")
   end

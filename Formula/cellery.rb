@@ -15,7 +15,7 @@ class Cellery < Formula
 # bin.install "Library/Cellery/cellery"
     bin.install "cellery"
     libexec.install Dir["*"]
-    (/usr/local/Cellar/test"test").install "cellery"
+    (/usr/local/Cellar/"test").install "cellery"
   end
 
   test do

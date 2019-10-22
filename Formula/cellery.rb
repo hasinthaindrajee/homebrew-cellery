@@ -10,7 +10,7 @@ class Cellery < Formula
  depends_on "hasinthaindrajee/cellery/ballerina"
  depends_on "python"
  depends_on "torsocks"
-
+puts(which("cellery"))
   def install
 # bin.install "Library/Cellery/cellery"
     bin.install "cellery"

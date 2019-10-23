@@ -2,18 +2,12 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
-class RRequirement < Requirement
-  fatal true
-  puts(which("ballerina"))
-  satisfy(:build_env => false) {which("ballerina")}
-
-  def message; <<~EOS
-    R is required; install it via one of:
-      brew install r
-      brew cask install r-app
-  EOS
+def possible_ballerina
+    ballerina << which("ballerina")
+    ballerina
   end
-end
+
+
 
 class Cellery < Formula
   desc ""
@@ -24,7 +18,9 @@ class Cellery < Formula
 # depends_on "hasinthaindrajee/cellery/ballerina"
  depends_on "python"
  depends_on "torsocks"
- depends_on RRequirement
+ if possible_ballerina
+puts("ballerina installed....")
+ end
 
 puts(which("ballerina"))
   def install

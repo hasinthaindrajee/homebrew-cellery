@@ -6,8 +6,6 @@ class RRequirement < Requirement
   fatal true
 
   satisfy(:build_env => false) {
-   puts(which("ballerina")
-   depends_on "hasinthaindrajee/cellery/ballerina"
    true
 }
 
@@ -31,6 +29,7 @@ class Cellery < Formula
  depends_on "torsocks"
 depends_on RRequirement
 
+puts(which("ballerina")
 
   def install
 # bin.install "Library/Cellery/cellery"

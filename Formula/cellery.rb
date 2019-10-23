@@ -9,6 +9,7 @@ class RRequirement < Requirement
 
 
   puts(which("ballerina"))
+  puts("after which ballerina")
   which("ballerina") }
 
   def message; <<~EOS
@@ -29,9 +30,8 @@ class Cellery < Formula
  depends_on "python"
  depends_on "torsocks"
 depends_on RRequirement
-puts("printing some logs....")
-puts(which("ballerina") == nil)
-puts("after put logs")
+
+
   def install
 # bin.install "Library/Cellery/cellery"
     bin.install "cellery"

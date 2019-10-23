@@ -7,9 +7,10 @@ class Cellery < Formula
   url "https://cellery-installer-resources.s3.amazonaws.com/cellery-0.5.0-SNAPSHOT.zip"
   sha256 "8bfa2cf209fc7385a32eb7cf559a801ddece37e8150b4a891bc482b67b7dbeb3"
 
- depends_on "hasinthaindrajee/cellery/ballerina"
+# depends_on "hasinthaindrajee/cellery/ballerina"
  depends_on "python"
  depends_on "torsocks"
+puts("printing some logs....")
 puts(which("cellery"))
   def install
 # bin.install "Library/Cellery/cellery"

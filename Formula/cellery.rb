@@ -7,7 +7,7 @@ class RRequirement < Requirement
 
   satisfy(:build_env => false) {
    puts(which("ballerina"))
-   which("ballerina")
+   false
 }
 
 

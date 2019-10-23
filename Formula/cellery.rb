@@ -8,7 +8,6 @@ class RRequirement < Requirement
   satisfy(:build_env => false) {
 
    puts(which("ballerina"))
-     depends_on "hasinthaindrajee/cellery/ballerina"
      return true
 }
 

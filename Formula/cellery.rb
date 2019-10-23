@@ -6,7 +6,7 @@ class RRequirement < Requirement
   fatal true
 
   satisfy(:build_env => false) {
-   true
+   which("ballerina")
 }
 
 

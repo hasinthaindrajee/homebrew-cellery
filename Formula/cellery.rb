@@ -11,7 +11,7 @@ class Cellery < Formula
  depends_on "python"
  depends_on "torsocks"
 puts("printing some logs....")
-puts(which("cellery"))
+puts(which("cellery") == nil)
 puts("after put logs")
   def install
 # bin.install "Library/Cellery/cellery"

@@ -5,12 +5,14 @@
 class RRequirement < Requirement
   fatal true
 
-  satisfy(:build_env => false) { 
+  satisfy(:build_env => false) {
 
+if  !which("ballerina") 
+depends_on "hasinthaindrajee/cellery/ballerina"
+end 
 
-  puts(which("ballerina"))
-  puts("after which ballerina")
-  which("ballerina") }
+}
+
 
   def message; <<~EOS
     R is required; install it via one of:

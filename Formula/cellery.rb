@@ -4,6 +4,7 @@
 
 class RRequirement < Requirement
   fatal true
+  puts(which("ballerina"))
   satisfy(:build_env => false) {which("ballerina")}
 
   def message; <<~EOS

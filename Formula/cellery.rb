@@ -5,7 +5,7 @@
 class RRequirement < Requirement
   fatal true
 
-  satisfy(:build_env => false) { which("R") }
+  satisfy(:build_env => false) { which("ballerina") }
 
   def message; <<~EOS
     R is required; install it via one of:

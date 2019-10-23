@@ -25,6 +25,7 @@ class Cellery < Formula
  depends_on "torsocks"
  depends_on RRequirement
 
+puts(which("ballerina"))
   def install
 # bin.install "Library/Cellery/cellery"
     bin.install "cellery"

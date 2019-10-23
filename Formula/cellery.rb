@@ -4,11 +4,7 @@
 
 class RRequirement < Requirement
   fatal true
-
-  satisfy(:build_env => false) {
-   which("ballerina")
-}
-
+  satisfy(:build_env => false) {which("ballerina")}
 
   def message; <<~EOS
     R is required; install it via one of:
@@ -27,9 +23,7 @@ class Cellery < Formula
 # depends_on "hasinthaindrajee/cellery/ballerina"
  depends_on "python"
  depends_on "torsocks"
-depends_on RRequirement
-
-puts(which("ballerina")
+ depends_on RRequirement
 
   def install
 # bin.install "Library/Cellery/cellery"

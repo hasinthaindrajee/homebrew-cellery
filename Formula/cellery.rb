@@ -1,6 +1,20 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+
+class RRequirement < Requirement
+  fatal true
+
+  satisfy(:build_env => false) { which("R") }
+
+  def message; <<~EOS
+    R is required; install it via one of:
+      brew install r
+      brew cask install r-app
+  EOS
+  end
+end
+
 class Cellery < Formula
   desc ""
   homepage ""
@@ -10,6 +24,7 @@ class Cellery < Formula
 # depends_on "hasinthaindrajee/cellery/ballerina"
  depends_on "python"
  depends_on "torsocks"
+depends_on RRequirement
 puts("printing some logs....")
 puts(which("ballerina") == nil)
 puts("after put logs")

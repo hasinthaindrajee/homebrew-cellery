@@ -13,11 +13,13 @@ cask 'cellery' do
   homepage ''
 
 puts(RRequirement)
- depends_on cask: 'ballerina' unless RRequirement.satisfy()
+# depends_on cask: 'ballerina' unless RRequirement.satisfy()
  depends_on formula: 'python'
  depends_on formula: 'torsocks'
 
  pkg 'cellery-macos-installer-x64-latest.pkg'
+
+ puts(system "ballerina", "home")
  uninstall pkgutil: 'org.cellery.*'
 
 end

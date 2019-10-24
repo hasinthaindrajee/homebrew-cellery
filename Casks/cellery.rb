@@ -13,7 +13,7 @@ cask 'cellery' do
   homepage ''
 
 puts(RRequirement)
- depends_on cask: 'ballerina' unless RRequirement.satisfied()
+ depends_on cask: 'ballerina' unless RRequirement.satisfy()
  depends_on formula: 'python'
  depends_on formula: 'torsocks'
 

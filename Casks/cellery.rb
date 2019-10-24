@@ -19,7 +19,7 @@ puts(RRequirement)
 
  pkg 'cellery-macos-installer-x64-latest.pkg'
 
- puts(system "ballerina", "home")
+ system "ballerina", "home"
  uninstall pkgutil: 'org.cellery.*'
 
 end

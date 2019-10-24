@@ -12,7 +12,7 @@ cask 'cellery' do
   name 'Cellery'
   homepage ''
 
- depends_on cask: 'ballerina' unless RRequirement
+ depends_on cask: 'ballerina' unless !RRequirement
  depends_on formula: 'python'
  depends_on formula: 'torsocks'
 

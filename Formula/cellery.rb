@@ -1,14 +1,6 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-
-def possible_ballerina
-    ballerina << which("ballerina")
-    ballerina
-  end
-
-
-
 class Cellery < Formula
   desc ""
   homepage ""
@@ -18,11 +10,7 @@ class Cellery < Formula
 # depends_on "hasinthaindrajee/cellery/ballerina"
  depends_on "python"
  depends_on "torsocks"
- if possible_ballerina
-puts("ballerina installed....")
- end
 
-puts(which("ballerina"))
   def install
 # bin.install "Library/Cellery/cellery"
     bin.install "cellery"

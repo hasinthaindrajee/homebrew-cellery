@@ -8,11 +8,11 @@ cask 'cellery' do
   version '0.5.0'
   sha256 :no_check
 
-  url "http://10.100.5.78:8000/cellery-brew-cask.zip"
+  url "https://cellery-installer-resources.s3.amazonaws.com/cellery-macos-installer-x64-latest.pkg"
   name 'Cellery'
   homepage ''
 
- depends on cask: hasinthaindrajee/ballerina unless RRequirement?
+ depends on cask: 'hasinthaindrajee/ballerina'
  depends_on formula: 'python'
  depends_on formula: 'torsocks'
 

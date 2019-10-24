@@ -12,7 +12,7 @@ cask 'cellery' do
   name 'Cellery'
   homepage ''
 
- depends on cask: 'hasinthaindrajee/ballerina'
+ depends_on cask: 'hasinthaindrajee/ballerina'
  depends_on formula: 'python'
  depends_on formula: 'torsocks'
 

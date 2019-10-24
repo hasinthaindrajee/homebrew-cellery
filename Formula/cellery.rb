@@ -5,7 +5,7 @@ class Cellery < Formula
   desc ""
   homepage ""
   url "https://cellery-installer-resources.s3.amazonaws.com/cellery-0.5.0-SNAPSHOT.zip"
-  sha256 "756508e6643c6892354356d299845183e0efdad495eff0e53c951ab4e8821468"
+  sha256 "1543765f62b4848d79af692c1b6cdc095f50f0340fd821d2440bd051bb8f115a"
 
 # depends_on "hasinthaindrajee/cellery/ballerina"
  depends_on "python"
@@ -18,6 +18,9 @@ class Cellery < Formula
 #    mkdir: '/usr/local/Cellar/test'
    # (/usr/local/Cellar/"test").install "cellery"
    # FileUtils.cp("cellery", ".")
+
+   system "mkdir", "/Users/hasinthaindrajee/lol"
+ 
   end
 
   test do

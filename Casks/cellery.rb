@@ -1,9 +1,3 @@
-class RRequirement < Requirement
-  fatal true
-
-  satisfy(:build_env => false) { which("ballerina") }
-end
-
 cask 'cellery' do
   version '0.5.0'
   sha256 :no_check
@@ -12,14 +6,12 @@ cask 'cellery' do
   name 'Cellery'
   homepage ''
 
-puts(RRequirement)
-# depends_on cask: 'ballerina' unless RRequirement.satisfy()
- depends_on formula: 'python'
- depends_on formula: 'torsocks'
+  depends_on formula: 'python'
+  depends_on formula: 'torsocks'
 
- pkg 'cellery-macos-installer-x64-latest.pkg'
+  pkg 'cellery-macos-installer-x64-latest.pkg'
 
- system "ballerina", "home"
- uninstall pkgutil: 'org.cellery.*'
+ 
+  uninstall pkgutil: 'org.cellery.*'
 
 end

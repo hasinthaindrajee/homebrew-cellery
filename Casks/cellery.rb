@@ -16,7 +16,7 @@ cask 'cellery' do
  depends_on formula: 'python'
  depends_on formula: 'torsocks'
 
- pkg 'cellery.pkg'
+ pkg 'cellery-macos-installer-x64-latest.pkg'
  uninstall pkgutil: 'org.cellery.*'
 
 end
